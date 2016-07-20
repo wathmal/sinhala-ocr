@@ -26,11 +26,11 @@ for(var i=0 ;i < constants.length; i++){
     for(var j=0; j<vovel_modifiers.length; j++){
         var canvas1 = new Canvas(70, 70);
         var ctx1 = canvas1.getContext('2d');
-        ctx1.font = '25px Noto Sans Sinhala';
+        ctx1.font = '25px LKLUG';
 
         var txt = constants[i]+vovel_modifiers[j];
 
-        ctx1.fillText(txt, 10, 35);
+        ctx1.fillText(txt, 5, 35);
         canvas1.createPNGStream().pipe(fs.createWriteStream(path.join(__dirname, '/imgs/text-'+ txt+'-.png')))
 
     }
