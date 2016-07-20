@@ -6,3 +6,5 @@ script to generate sinhala text images
 npm install
 node textgen.js
 ```
+
+created image will be saved in `imgs/` directory.
