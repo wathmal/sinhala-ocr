@@ -36,5 +36,19 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-imgs/
 .idea
+
+# generated data dbs
+/sin_train_lmdb/
+/sin_test_lmdb/
+
+# generated original images, some cotains false data
+/imgs/original/
+# trained models
+/model/
+
+# generated images
+/*.png
+
+# train logs
+/*.log*
