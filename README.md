@@ -1,6 +1,6 @@
 # sinhala-ocr
 
-this is no way near an OCR. this project contains some perfect test images of sinhala characters (generated) and some test CNN (convolution neural network) model to train the data set in order to identify images with sinhala characters.
+this is no way near an OCR. this project contains some perfect test images of sinhala characters (generated) and a test CNN (convolution neural network) based on lenet to train the data set in order to identify images with sinhala characters.
 
 here we have used `caffe` for implementing and training the network. **do anything you want with the provided dataset.**
 
