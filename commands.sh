@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# create lmdb
-#~/Documents/caffe/build/tools/convert_imageset -shuffle imgs/test/ labels_test.txt sin_test_lmdb
-#~/Documents/caffe/build/tools/convert_imageset -shuffle imgs/train/ labels.txt sin_train_lmdb
+# create lmdb databases
 ~/Documents/caffe/build/tools/convert_imageset -shuffle imgs/adjusted/test_grey/ imgs/adjusted/labels_test_0.txt sin_test_lmdb
 ~/Documents/caffe/build/tools/convert_imageset -shuffle imgs/adjusted/train_grey/ imgs/adjusted/labels_0.txt sin_train_lmdb
 
