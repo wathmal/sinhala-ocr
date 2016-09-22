@@ -47,7 +47,7 @@ sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build
 ```
 
 ### running the script
-you need to have all the fonts mentioned in the code installed in your system. make sure font names don't have any spaces or escpae characetrs.
+you need to have all the fonts mentioned in the code installed in your system. make sure font names don't have any spaces or escape characters.
 
 ```
 npm install
