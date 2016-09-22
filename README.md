@@ -32,6 +32,7 @@ here we have used `caffe` for implementing and training the network. **do anythi
 
 ones you have defined `lenet_train_test.prototxt` and configured solver `lenet_solver.prototxt` start training using following commands.
 
+view `commands.sh` file.
 
 ## evaluating
 use the `test.py` to test the trained model on your new images.
