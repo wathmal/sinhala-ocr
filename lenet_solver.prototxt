@@ -22,6 +22,6 @@ display: 10
 max_iter: 600
 # snapshot intermediate results
 snapshot: 100
-snapshot_prefix: "model/test2/lenet"
+snapshot_prefix: "model/test1/lenet"
 # solver mode: CPU or GPU
 solver_mode: CPU
