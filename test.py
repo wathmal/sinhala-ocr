@@ -3,7 +3,7 @@
 import sys
 import caffe
 import cv2
-import Image
+from PIL import Image
 import matplotlib
 import numpy as np
 import lmdb
@@ -19,7 +19,7 @@ sin_labels = ['ක','ඛ', 'ග', 'ඝ', 'ඟ', 'ච', 'ඡ', 'ජ', 'ට', 'ඩ
 net = caffe.Net(MODEL_FILE, PRETRAINED,caffe.TEST)
 caffe.set_mode_cpu()
 # Test self-made image
-img = caffe.io.load_image('/home/wathmal/WebstormProjects/ML/imgs/unicode/noto_sans_sinhala_bold_31.png', color=False)
+img = caffe.io.load_image('/home/sasithas/IdeaProjects/sinhala-ocr/imgs/unicode/bhashita_complex_5.png', color=False)
 img = img.astype(np.uint8)
 out = net.forward_all(data=np.asarray([img.transpose(2,0,1)]))
 # print out['prob'][0]
