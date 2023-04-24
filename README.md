@@ -1,58 +1,55 @@
-# sinhala-ocr
+# Sinhala-OCR
 
-this is no way near an OCR. this project contains some perfect test images of sinhala characters (generated) and a test CNN (convolution neural network) based on lenet to train the data set in order to identify images with sinhala characters.
+This project is not an OCR. Instead, it contains a dataset of perfect test images of Sinhala characters that were generated, along with a test Convolutional Neural Network (CNN) based on LeNet. The purpose is to train the dataset to identify images that contain Sinhala characters. Caffe was used to implement and train the network. Feel free to use the provided dataset for your own purposes.
 
-here we have used `caffe` for implementing and training the network. **do anything you want with the provided dataset.**
+## Directory Structure
 
-
-
-## directory structure
 ```
 .
-├── commands.sh                 # contains useful caffe commands
+├── commands.sh                 # contains useful Caffe commands
 ├── imgs                        # dataset
-│   ├── adjusted                # traing images with label files (TRAIN & TEST phase)
+│   ├── adjusted                # training images with label files (TRAIN & TEST phase)
 │   ├── labels_unicode.txt
-│   └── unicode                 # a new dataset to evaluvate trained model
+│   └── unicode                 # a new dataset to evaluate the trained model
 ├── lenet.prototxt              # TEST model
-├── lenet_solver.prototxt       # caffe solver
+├── lenet_solver.prototxt       # Caffe solver
 ├── lenet_train_test.prototxt   # TRAIN model
-├── map.txt                     # mapping of labels / unicode char / other sinhala fonts
+├── map.txt                     # mapping of labels / Unicode char / other Sinhala fonts
 ├── model                       # output models / solverstate directory
 ├── node_modules
 ├── README.md
-├── test.py                     # pythin script to evaluvate trained model
-└── textgen.js                  # script to generate sinhala chars
+├── test.py                     # Python script to evaluate the trained model
+└── textgen.js                  # script to generate Sinhala characters
 
 ```
 
-## generating database files
+## Generating Database Files
 
-## training
+### Training
 
-ones you have defined `lenet_train_test.prototxt` and configured solver `lenet_solver.prototxt` start training using following commands.
+Once you have defined `lenet_train_test.prototxt` and configured solver `lenet_solver.prototxt`, start training using the following commands. You can view `commands.sh` file for useful Caffe commands.
 
-view `commands.sh` file.
+### Evaluating
 
-## evaluating
-use the `test.py` to test the trained model on your new images.
+Use `test.py` to test the trained model on your new images.
 
+## Generate Sinhala Characters
 
+### Installation
 
+To generate Sinhala characters, you need to install the following dependencies:
 
-## generate sinhala chars
-
-### installation
 ```
 sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
 ```
 
-### running the script
-you need to have all the fonts mentioned in the code installed in your system. make sure font names don't have any spaces or escape characters.
+### Running the Script
+
+Make sure all the fonts mentioned in the code are installed on your system and that font names don't have any spaces or escape characters. To generate Sinhala characters, run the following commands:
 
 ```
 npm install
 node textgen.js
 ```
 
-created image will be saved in `imgs/` directory.
+The created image will be saved in `imgs/` directory.
